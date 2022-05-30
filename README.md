@@ -38,3 +38,36 @@ All of these points are totalled to find the value of a hand. For example (using
 Following the show of each player's hand, the dealer counts the crib as a second hand, claiming any points therein.
 
 Finally, the player following the dealer collects the cards, becoming dealer for the next hand. Play proceeds this way until one player reaches 121 points.
+
+
+# Marks
+
+- 13.3/15 (88.5%)
+
+  ```
+  pass Validation
+  pass hand_value for a pair
+  pass hand_value test 1
+  pass hand_value test 2
+  pass hand_value test 3
+  pass hand_value test 4
+  pass hand_value test 5
+  pass hand_value test 6
+  pass hand_value test 7
+  pass hand_value test 8
+  pass hand_value test 9
+  pass hand_value test 10
+  select_hand simple test result percentage: 100
+  select_hand test 1 result percentage: 100
+  select_hand test 2 result percentage: 100
+  select_hand test 3 result percentage: 100
+  select_hand test 4 result percentage: 100
+  select_hand test 5 result percentage: 100
+  select_hand test 6 result percentage: 100
+  select_hand test 7 result percentage: 100
+  select_hand test 8 result percentage: 100
+  select_hand test 9 result percentage: 100
+  select_hand test 10 result percentage: 100
+  ```
+
+- You've made some good use of Prolog, for example with maplist. But overall your code is written too much in an imperative-like style, with too much explicit use of if-then-else, which you should reserve for only those case where you can't achieve what you want through normal Prolog execution. Unclear or not very helpful summary near top of file. Little or no file-level documentation.
